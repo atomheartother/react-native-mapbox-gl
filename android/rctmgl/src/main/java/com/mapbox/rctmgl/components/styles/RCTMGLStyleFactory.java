@@ -1574,7 +1574,7 @@ public class RCTMGLStyleFactory {
       String TAG = "TextField";
       Log.d(TAG, "Text field value read");
       if (styleValue.isFunction()) {
-        Log.d(TAG, "Style value is function")
+        Log.d(TAG, "Style value is function");
         RCTMGLStyleFunctionParser<String, String> parser = new RCTMGLStyleFunctionParser<String, String>(styleValue) {
             @Override
             protected String getRawStopValue(RCTMGLStyleValue styleValue) {
