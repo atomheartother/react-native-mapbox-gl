@@ -18,6 +18,7 @@ import com.mapbox.mapboxsdk.style.light.Position;
 import com.mapbox.rctmgl.utils.DownloadMapImageTask;
 
 import java.util.List;
+import android.util.Log;
 
 public class RCTMGLStyleFactory {
     public static final String VALUE_KEY = "value";
