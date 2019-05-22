@@ -1571,8 +1571,8 @@ public class RCTMGLStyleFactory {
     }
 
     public static void setTextField(SymbolLayer layer, RCTMGLStyleValue styleValue) {
-      private static final String TAG = "TextField";
-      Log.d(TAG, "Text field value read")
+      String TAG = "TextField";
+      Log.d(TAG, "Text field value read");
       if (styleValue.isFunction()) {
         Log.d(TAG, "Style value is function")
         RCTMGLStyleFunctionParser<String, String> parser = new RCTMGLStyleFunctionParser<String, String>(styleValue) {
@@ -1590,7 +1590,7 @@ public class RCTMGLStyleFactory {
         layer.setProperties(PropertyFactory.textField(styleValue.makeStyleFunction(parser)));
       } else {
         Log.d(TAG, "Style value isn't function");
-        private final String str = styleValue.getString(VALUE_KEY);
+        String str = styleValue.getString(VALUE_KEY);
         Log.d(TAG, str);
         layer.setProperties(PropertyFactory.textField(str));
       }
